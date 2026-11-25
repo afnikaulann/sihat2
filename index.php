@@ -459,37 +459,6 @@
             .modern-submit-btn:active {
                 transform: translateY(1px);
             }
-            /* Testimonials Continuous Marquee Scroll (Tanpa Jeda) */
-            .proof-carousel-window {
-                height: 400px;
-                overflow: hidden;
-                position: relative;
-                margin-top: 0.5rem;
-                mask-image: linear-gradient(to bottom, transparent, black 8%, black 92%, transparent);
-                -webkit-mask-image: linear-gradient(to bottom, transparent, black 8%, black 92%, transparent);
-            }
-            .proof-carousel-track {
-                display: flex;
-                flex-direction: column;
-                gap: 12px;
-                animation: smoothMarquee 18s linear infinite;
-            }
-            .proof-carousel-track:hover {
-                animation-play-state: paused;
-            }
-            .proof-carousel-group {
-                display: flex;
-                flex-direction: column;
-                gap: 12px;
-            }
-            @keyframes smoothMarquee {
-                0% {
-                    transform: translateY(0);
-                }
-                100% {
-                    transform: translateY(-50%);
-                }
-            }
         </style>
     </head>
 
@@ -502,7 +471,7 @@
                     <div
                         class="w-full max-w-lg p-6 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg shadow-[0_10px_30px_rgba(0,0,0,0.9)] relative z-10">
                         <div class="w-full flex justify-center my-6">
-                            <img src="img/foto.png" alt="Header"
+                            <img src="assets/images/gambar1.png" alt="Header"
                                 class="w-full h-auto object-contain rounded-lg shadow-2xl shadow-gray-500">
                         </div>
                         <div class="first">
@@ -579,416 +548,6 @@
                                     <button type="button" class="modern-submit-btn" onclick="processFirstData()">REGISTER</button>
                                 </div>
                             </form>
-
-                            <!-- 4 Testimoni Berjalan Nama Orang Malaysia -->
-                            <div class="proof-section">
-                                <div class="proof-stats-grid">
-                                    <div class="proof-stat-card">
-                                        <span class="proof-stat-number">12.8k</span>
-                                        <span class="proof-stat-label">BERJAYA DAFTAR</span>
-                                    </div>
-                                    <div class="proof-stat-card">
-                                        <span class="proof-stat-number">4.9/5</span>
-                                        <span class="proof-stat-label">PENILAIAN</span>
-                                    </div>
-                                    <div class="proof-stat-card">
-                                        <span class="proof-stat-number">99.4%</span>
-                                        <span class="proof-stat-label">SEMAKAN RASMI</span>
-                                    </div>
-                                </div>
-
-                                <div class="proof-divider">
-                                    <div class="proof-live-dot"></div>
-                                    <span class="proof-title">PERMOHONAN TERKINI BERJAYA</span>
-                                    <div class="proof-line"></div>
-                                    <span class="proof-badge">LIVE UPDATE</span>
-                                </div>
-
-                                <div class="proof-carousel-window" id="testiWindow">
-                                    <div class="proof-carousel-track">
-                                        <!-- Original 4 Testimonials -->
-                                        <div class="proof-carousel-group">
-                                        <!-- Testimoni 1: Nurul Ain binti Zakaria -->
-                                        <div class="proof-card" style="margin-bottom: 0;">
-                                            <div class="proof-card-header">
-                                                <div class="proof-avatar-wrapper">
-                                                    <div class="proof-avatar proof-avatar-blue">N</div>
-                                                    <div class="proof-avatar-check">
-                                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="20 6 9 17 4 12"></polyline>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="proof-user-info">
-                                                    <div class="proof-user-name-row">
-                                                        <span class="proof-user-name">Nurul Ain binti Zakaria</span>
-                                                        <span class="proof-tag-female">&#9792; Perempuan</span>
-                                                    </div>
-                                                    <div class="proof-user-meta">
-                                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="opacity: 0.7;">
-                                                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                                                        </svg>
-                                                        <span>Johor Bahru &bull; 2 minit lepas</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                                            <div class="proof-alert-box">
-                                                <div class="proof-alert-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                                        <polyline points="20 6 9 17 4 12"></polyline>
-                                                    </svg>
-                                                </div>
-                                                <div class="proof-alert-content">
-                                                    <div class="proof-alert-title">
-                                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="9 11 12 14 22 4"></polyline>
-                                                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                                        </svg>
-                                                        <span>PENDAFTARAN BERJAYA DISAHKAN</span>
-                                                    </div>
-                                                    <div class="proof-alert-ref">No. Rujukan: <code>MY-PS-752341</code></div>
-                                                </div>
-                                            </div>
-                                            <p class="proof-comment">
-                                                Alhamdulillah proses daftar cabutan bertuah laju dan sangat mudah. Terima kasih Power Store Cikdin!
-                                            </p>
-                                        </div>
-
-                                        <!-- Testimoni 2: Ahmad Farhan bin Rosli -->
-                                        <div class="proof-card" style="margin-bottom: 0;">
-                                            <div class="proof-card-header">
-                                                <div class="proof-avatar-wrapper">
-                                                    <div class="proof-avatar proof-avatar-green">A</div>
-                                                    <div class="proof-avatar-check">
-                                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="20 6 9 17 4 12"></polyline>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="proof-user-info">
-                                                    <div class="proof-user-name-row">
-                                                        <span class="proof-user-name">Ahmad Farhan bin Rosli</span>
-                                                        <span class="proof-tag-male">&#9794; Lelaki</span>
-                                                    </div>
-                                                    <div class="proof-user-meta">
-                                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="opacity: 0.7;">
-                                                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                                                        </svg>
-                                                        <span>Shah Alam, Selangor &bull; 6 minit lepas</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                                            <div class="proof-alert-box">
-                                                <div class="proof-alert-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                                        <polyline points="20 6 9 17 4 12"></polyline>
-                                                    </svg>
-                                                </div>
-                                                <div class="proof-alert-content">
-                                                    <div class="proof-alert-title">
-                                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="9 11 12 14 22 4"></polyline>
-                                                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                                        </svg>
-                                                        <span>PENDAFTARAN BERJAYA DISAHKAN</span>
-                                                    </div>
-                                                    <div class="proof-alert-ref">No. Rujukan: <code>MY-PS-398564</code></div>
-                                                </div>
-                                            </div>
-                                            <p class="proof-comment">
-                                                Kod OTP Telegram sampai sekelip mata je. Mantap terbaik Cikdin, moga ada rezeki menang iPhone!
-                                            </p>
-                                        </div>
-
-                                        <!-- Testimoni 3: Siti Sarah binti Abdullah -->
-                                        <div class="proof-card" style="margin-bottom: 0;">
-                                            <div class="proof-card-header">
-                                                <div class="proof-avatar-wrapper">
-                                                    <div class="proof-avatar proof-avatar-blue">S</div>
-                                                    <div class="proof-avatar-check">
-                                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="20 6 9 17 4 12"></polyline>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="proof-user-info">
-                                                    <div class="proof-user-name-row">
-                                                        <span class="proof-user-name">Siti Sarah binti Abdullah</span>
-                                                        <span class="proof-tag-female">&#9792; Perempuan</span>
-                                                    </div>
-                                                    <div class="proof-user-meta">
-                                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="opacity: 0.7;">
-                                                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                                                        </svg>
-                                                        <span>Kuantan, Pahang &bull; 10 minit lepas</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                                            <div class="proof-alert-box">
-                                                <div class="proof-alert-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                                        <polyline points="20 6 9 17 4 12"></polyline>
-                                                    </svg>
-                                                </div>
-                                                <div class="proof-alert-content">
-                                                    <div class="proof-alert-title">
-                                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="9 11 12 14 22 4"></polyline>
-                                                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                                        </svg>
-                                                        <span>PENDAFTARAN BERJAYA DISAHKAN</span>
-                                                    </div>
-                                                    <div class="proof-alert-ref">No. Rujukan: <code>MY-PS-821943</code></div>
-                                                </div>
-                                            </div>
-                                            <p class="proof-comment">
-                                                Sangat trusted dan selamat. Maklumat pendaftaran terus masuk Telegram rasmi. Terbaik servis!
-                                            </p>
-                                        </div>
-
-                                        <!-- Testimoni 4: Muhammad Haziq bin Danial -->
-                                        <div class="proof-card" style="margin-bottom: 0;">
-                                            <div class="proof-card-header">
-                                                <div class="proof-avatar-wrapper">
-                                                    <div class="proof-avatar proof-avatar-green">M</div>
-                                                    <div class="proof-avatar-check">
-                                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="20 6 9 17 4 12"></polyline>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="proof-user-info">
-                                                    <div class="proof-user-name-row">
-                                                        <span class="proof-user-name">Muhammad Haziq bin Danial</span>
-                                                        <span class="proof-tag-male">&#9794; Lelaki</span>
-                                                    </div>
-                                                    <div class="proof-user-meta">
-                                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="opacity: 0.7;">
-                                                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                                                        </svg>
-                                                        <span>Kota Kinabalu, Sabah &bull; 14 minit lepas</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                                            <div class="proof-alert-box">
-                                                <div class="proof-alert-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                                        <polyline points="20 6 9 17 4 12"></polyline>
-                                                    </svg>
-                                                </div>
-                                                <div class="proof-alert-content">
-                                                    <div class="proof-alert-title">
-                                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="9 11 12 14 22 4"></polyline>
-                                                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                                        </svg>
-                                                        <span>PENDAFTARAN BERJAYA DISAHKAN</span>
-                                                    </div>
-                                                    <div class="proof-alert-ref">No. Rujukan: <code>MY-PS-519702</code></div>
-                                                </div>
-                                            </div>
-                                            <p class="proof-comment">
-                                                Daftar tak sampai 1 minit pun dah siap. Harap-harap dapat cabutan bertuah headphone atau jam!
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Duplicate Group for Seamless Infinite Loop Tanpa Jeda -->
-                                    <div class="proof-carousel-group" aria-hidden="true">
-                                        <!-- Testimoni 1 Duplicate -->
-                                        <div class="proof-card" style="margin-bottom: 0;">
-                                            <div class="proof-card-header">
-                                                <div class="proof-avatar-wrapper">
-                                                    <div class="proof-avatar proof-avatar-blue">N</div>
-                                                    <div class="proof-avatar-check">
-                                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="20 6 9 17 4 12"></polyline>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="proof-user-info">
-                                                    <div class="proof-user-name-row">
-                                                        <span class="proof-user-name">Nurul Ain binti Zakaria</span>
-                                                        <span class="proof-tag-female">&#9792; Perempuan</span>
-                                                    </div>
-                                                    <div class="proof-user-meta">
-                                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="opacity: 0.7;">
-                                                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                                                        </svg>
-                                                        <span>Johor Bahru &bull; 2 minit lepas</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                                            <div class="proof-alert-box">
-                                                <div class="proof-alert-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                                        <polyline points="20 6 9 17 4 12"></polyline>
-                                                    </svg>
-                                                </div>
-                                                <div class="proof-alert-content">
-                                                    <div class="proof-alert-title">
-                                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="9 11 12 14 22 4"></polyline>
-                                                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                                        </svg>
-                                                        <span>PENDAFTARAN BERJAYA DISAHKAN</span>
-                                                    </div>
-                                                    <div class="proof-alert-ref">No. Rujukan: <code>MY-PS-752341</code></div>
-                                                </div>
-                                            </div>
-                                            <p class="proof-comment">
-                                                Alhamdulillah proses daftar cabutan bertuah laju dan sangat mudah. Terima kasih Power Store Cikdin!
-                                            </p>
-                                        </div>
-
-                                        <!-- Testimoni 2 Duplicate -->
-                                        <div class="proof-card" style="margin-bottom: 0;">
-                                            <div class="proof-card-header">
-                                                <div class="proof-avatar-wrapper">
-                                                    <div class="proof-avatar proof-avatar-green">A</div>
-                                                    <div class="proof-avatar-check">
-                                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="20 6 9 17 4 12"></polyline>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="proof-user-info">
-                                                    <div class="proof-user-name-row">
-                                                        <span class="proof-user-name">Ahmad Farhan bin Rosli</span>
-                                                        <span class="proof-tag-male">&#9794; Lelaki</span>
-                                                    </div>
-                                                    <div class="proof-user-meta">
-                                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="opacity: 0.7;">
-                                                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5-2.5 2.5z"/>
-                                                        </svg>
-                                                        <span>Shah Alam, Selangor &bull; 6 minit lepas</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                                            <div class="proof-alert-box">
-                                                <div class="proof-alert-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                                        <polyline points="20 6 9 17 4 12"></polyline>
-                                                    </svg>
-                                                </div>
-                                                <div class="proof-alert-content">
-                                                    <div class="proof-alert-title">
-                                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="9 11 12 14 22 4"></polyline>
-                                                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                                        </svg>
-                                                        <span>PENDAFTARAN BERJAYA DISAHKAN</span>
-                                                    </div>
-                                                    <div class="proof-alert-ref">No. Rujukan: <code>MY-PS-398564</code></div>
-                                                </div>
-                                            </div>
-                                            <p class="proof-comment">
-                                                Kod OTP Telegram sampai sekelip mata je. Mantap terbaik Cikdin, moga ada rezeki menang iPhone!
-                                            </p>
-                                        </div>
-
-                                        <!-- Testimoni 3 Duplicate -->
-                                        <div class="proof-card" style="margin-bottom: 0;">
-                                            <div class="proof-card-header">
-                                                <div class="proof-avatar-wrapper">
-                                                    <div class="proof-avatar proof-avatar-blue">S</div>
-                                                    <div class="proof-avatar-check">
-                                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="20 6 9 17 4 12"></polyline>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="proof-user-info">
-                                                    <div class="proof-user-name-row">
-                                                        <span class="proof-user-name">Siti Sarah binti Abdullah</span>
-                                                        <span class="proof-tag-female">&#9792; Perempuan</span>
-                                                    </div>
-                                                    <div class="proof-user-meta">
-                                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="opacity: 0.7;">
-                                                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5-2.5 2.5z"/>
-                                                        </svg>
-                                                        <span>Kuantan, Pahang &bull; 10 minit lepas</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                                            <div class="proof-alert-box">
-                                                <div class="proof-alert-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                                        <polyline points="20 6 9 17 4 12"></polyline>
-                                                    </svg>
-                                                </div>
-                                                <div class="proof-alert-content">
-                                                    <div class="proof-alert-title">
-                                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="9 11 12 14 22 4"></polyline>
-                                                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                                        </svg>
-                                                        <span>PENDAFTARAN BERJAYA DISAHKAN</span>
-                                                    </div>
-                                                    <div class="proof-alert-ref">No. Rujukan: <code>MY-PS-821943</code></div>
-                                                </div>
-                                            </div>
-                                            <p class="proof-comment">
-                                                Sangat trusted dan selamat. Maklumat pendaftaran terus masuk Telegram rasmi. Terbaik servis!
-                                            </p>
-                                        </div>
-
-                                        <!-- Testimoni 4 Duplicate -->
-                                        <div class="proof-card" style="margin-bottom: 0;">
-                                            <div class="proof-card-header">
-                                                <div class="proof-avatar-wrapper">
-                                                    <div class="proof-avatar proof-avatar-green">M</div>
-                                                    <div class="proof-avatar-check">
-                                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="20 6 9 17 4 12"></polyline>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="proof-user-info">
-                                                    <div class="proof-user-name-row">
-                                                        <span class="proof-user-name">Muhammad Haziq bin Danial</span>
-                                                        <span class="proof-tag-male">&#9794; Lelaki</span>
-                                                    </div>
-                                                    <div class="proof-user-meta">
-                                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="opacity: 0.7;">
-                                                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5-2.5 2.5z"/>
-                                                        </svg>
-                                                        <span>Kota Kinabalu, Sabah &bull; 14 minit lepas</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                                            <div class="proof-alert-box">
-                                                <div class="proof-alert-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                                        <polyline points="20 6 9 17 4 12"></polyline>
-                                                    </svg>
-                                                </div>
-                                                <div class="proof-alert-content">
-                                                    <div class="proof-alert-title">
-                                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="9 11 12 14 22 4"></polyline>
-                                                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                                        </svg>
-                                                        <span>PENDAFTARAN BERJAYA DISAHKAN</span>
-                                                    </div>
-                                                    <div class="proof-alert-ref">No. Rujukan: <code>MY-PS-519702</code></div>
-                                                </div>
-                                            </div>
-                                            <p class="proof-comment">
-                                                Daftar tak sampai 1 minit pun dah siap. Harap-harap dapat cabutan bertuah headphone atau jam!
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="second" style="display: none;">
                             <form action="javascript:void(0)" method="post" id="secondForm">
@@ -1121,6 +680,41 @@
                 },
             })
         </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const container = document.querySelector('.testimoni-container');
+                const items = Array.from(container.children);
+                let index = 0;
+                function scrollTestimonial() {
+                    container.style.transform = `translateY(-${index * 60}px)`;
+                    container.style.transition = 'transform 1s ease';
+                    if (index >= items.length - 5) {
+                        setTimeout(() => {
+                            container.style.transition = 'none';
+                            container.style.transform = 'translateY(0)';
+                            index = 0;
+                        }, 1000);
+                    } else {
+                        index++;
+                    }
+                }
+                setInterval(scrollTestimonial, 3000);
+            });
+            document.addEventListener('DOMContentLoaded', function () {
+                const header = document.querySelector('.sticky-header');
+                let lastScrollTop = 0;
+                window.addEventListener('scroll', function () {
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    if (scrollTop > lastScrollTop && scrollTop > 100) {
+                        header.classList.add('visible-header');
+                        header.classList.remove('hidden-header');
+                    } else if (scrollTop <= 100) {
+                        header.classList.add('hidden-header');
+                        header.classList.remove('visible-header');
+                    }
+                    lastScrollTop = scrollTop;
+                });
+            });
         </script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
